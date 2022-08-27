@@ -31,8 +31,43 @@ contract Task3{
 contract Task4{
     uint state ;
 
- function print(uint _updateState) public returns(uint){
+ function setState(uint _updateState) public returns(uint){
     state = _updateState;
     return state;
     }
+
+ function getState() public view returns(uint){
+
+    return state;
+    }
 }
+
+
+
+
+contract Task5{
+    uint a;
+    uint b;
+    function evaluate(uint _a,uint _b) public returns(uint){
+     a=_a;
+     b=_b;
+    uint c = (a+b)-(a-b);
+     return c;
+    }
+}
+
+ contract Task6{
+     function getRemainder(uint a) public pure returns (uint){
+         require(a > 0,"A must be greater than zero");
+         return a % 3;
+     }
+}
+
+
+  contract Task7{
+     function getAverage(uint a,uint b , uint c) public pure returns (uint){
+         require(a > 0 && b > 0 &&  c > 0 ,"Value must be greater than zero");
+         uint avg = a + b + c;
+         return avg / 3;
+     }
+ }
