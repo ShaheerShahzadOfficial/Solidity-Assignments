@@ -71,3 +71,15 @@ contract Task5{
          return avg / 3;
      }
  }
+ 
+    contract Task7{
+      function uintTotal(uint _num1) public pure returns(uint){
+           uint total = 0;
+ while(_num1 > 1){
+    uint num2 = _num1 % 10;
+    total= total + num2;
+    _num1 = _num1/10;
+}
+ return total;
+      }
+ }
