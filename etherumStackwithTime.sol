@@ -103,3 +103,29 @@ if (dopositer[_payee].depositOn  > block.timestamp + 1 minutes) {
 //         counter += 1;
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+contract feesPayer{
+      function enterClass(bool FeesPaid) public pure  returns (string memory){
+
+if (FeesPaid == true) {
+      return "You Are Allowed To Go Inside";
+} else {
+       return "Pay The Fees Than Enter The Class";
+}
+
+
+}
+
+}
